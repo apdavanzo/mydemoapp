@@ -16,7 +16,7 @@ resource "aws_instance" "foo" {
   availability_zone = "${var.aws_region}a"
 
   tags {
-    owner = "Adam"
+    owner = "Adam C"
     TTL = 1
   }
   subnet_id = "${module.network.demo_subnet_id}"
