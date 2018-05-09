@@ -1,6 +1,6 @@
 module "network" {
-  source  = "atlas.hashicorp.com/fpollock-demo/network/aws"
-  version = "0.0.9"
+  source  = "app.terraform.io/tfe-technical-marketing-demo/network/aws"
+  version = "0.1.0"
 
   region = "us-west-1"
   subnet_availability_zone = "us-west-1a"
