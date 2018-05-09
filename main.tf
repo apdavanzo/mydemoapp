@@ -4,6 +4,8 @@ module "network" {
 
   region = "us-west-1"
   subnet_availability_zone = "us-west-1a"
+  subnet_cidr_block = "${var.network_subnet_cidr_block}"
+  vpc_cidr_block = "${var.network_vpc_cidr_block}"
 }
 
 provider "aws" {
