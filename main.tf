@@ -12,7 +12,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "i-010eae58aa1e15108" {
-  ami           = "${var.ami_id}"
+  ami           = "ami-46e1f226"
   instance_type = "${var.instance_type}"
   availability_zone = "${var.aws_region}c"
 
