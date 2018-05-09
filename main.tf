@@ -3,7 +3,7 @@ module "network" {
   version = "0.1.0"
 
   region = "us-west-1"
-  subnet_availability_zone = "us-west-1a"
+  subnet_availability_zone = "us-west-1c"
   subnet_cidr_block = "172.16.10.0/24"
   vpc_cidr_block = "172.16.0.0/16"
 }
@@ -14,7 +14,7 @@ provider "aws" {
 resource "aws_instance" "foo" {
   ami           = "${var.ami_id}"
   instance_type = "${var.instance_type}"
-  availability_zone = "${var.aws_region}a"
+  availability_zone = "${var.aws_region}c"
 
   tags {
     owner = "Adam C"
