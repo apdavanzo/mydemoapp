@@ -1,3 +1,6 @@
+variable "network_subnet_cidr_block" {}
+variable "network_vpc_cidr_block" {}
+
 module "network" {
   source  = "app.terraform.io/tfe-technical-marketing-demo/network/aws"
   version = "0.1.0"
