@@ -11,13 +11,13 @@ provider "aws" {
     region = "${var.aws_region}"
 }
 
-resource "aws_instance" "foo" {
+resource "aws_instance" "i-010eae58aa1e15108" {
   ami           = "${var.ami_id}"
   instance_type = "${var.instance_type}"
   availability_zone = "${var.aws_region}c"
 
   tags {
-    owner = "Adam C"
+    owner = "Anthony D"
     TTL = 1
   }
   subnet_id = "${module.network.demo_subnet_id}"
